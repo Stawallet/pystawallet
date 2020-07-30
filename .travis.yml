@@ -1,10 +1,10 @@
 language: python
 python:
-- 3.7
+  - 3.7
 before_install:
-- pip install -U pip
+  - pip install -U pip
 install:
-- pip install ".[test]" .
+  - pip install ".[test]" .
 script: nosetests --with-coverage
 deploy:
   provider: pypi
@@ -12,4 +12,4 @@ deploy:
   password:
     secure: OzAezxey/JO+FbGE6AsxZ+V883dXxIUAKc1jVGsyTplKNarAD+A7BsfgeQynLIrYUrk3OWyPbSp9u7iSWZbCiSyL7fGe5pgiF4jAG8zksh4NfSacfZUSh2OJtBvtx9IgqjOwyWCuSGMeon1Idked2j2auLl1KiKJmDHPEr/1HgUTZ9NxIBhLLXnj04tuJVzITNTFF6QOupLCQLI3IJsbvDtWi0cGIrrTFHD32DlWsRPv+pl47T2XEgpjWjnhGZlaG9Yj16QBeaox9TUfmHS17EvCfYuCc1mO9M6293IZW/sBz5c0+etR+7+pNJzFCYKy//+T5s/yYTBK56c7keXWd7wBIRoMYlxJZNNWYsrLxfX0hLOryJ97pS32mhymTJ7mVI7oyFQUMzmSqblpHKdlnu3iIAIKWOnUoTnAWZyDkNMySD6zUrRtpUMCm/KhENkTA4BmBHi5c+xCL/O0UcPG6X11zQgboMTmL0Z0LJnN9qxZf6ctfGwfW+rXecylH9crPOezwBQnPljQtczHZrEiwgKgpohsBJY5begIUwq2nV5qrr+WPPFF8kcK92zubMj2QKykBvIb7CylqYrYr3s332fZoVTyMH6Mkn1+chliNJDjj/gRi0Tc+26hkVU6LRK/LNwe7OYdVi6apuQgGVnI0+e2gt7XwNzV/LnlTXDjiAo=
 after_success:
-- codecov
+  - codecov
