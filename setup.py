@@ -11,7 +11,7 @@ test_dependencies = ['nose', 'codecov']
 
 setup(
     name="pystawallet",
-    version='0.1.11',
+    version='0.1.1',
     author="stawallet",
     tests_require=test_dependencies,
     extras_require={'test': test_dependencies},
